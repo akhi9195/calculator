@@ -7,8 +7,12 @@ This Project has basic test cases for Calculator App for following scenarios.
 
  Framework Details:
  ------------------
- Language: Java
+ Language: Java 
+ 
  Automation: Selenium 
+ 
  Design Pattern: POM with SRP
+ 
  Assertions: AssertJ
+ 
  Reporting: Yet to be implemented.
