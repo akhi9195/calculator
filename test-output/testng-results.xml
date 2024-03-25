@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="14" total="15" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-25T01:47:41Z" name="Default suite" finished-at="2024-03-25T01:47:44Z" duration-ms="2837">
+    <groups>
+    </groups>
+    <test started-at="2024-03-25T01:47:41Z" name="Default test" finished-at="2024-03-25T01:47:44Z" duration-ms="2837">
+      <class name="nuixc.testSuite.AdditionTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:nuixc.testSuite.AdditionTests@3f67593e]" started-at="2024-03-25T01:47:41Z" name="setup" finished-at="2024-03-25T01:47:42Z" duration-ms="1293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLatestOperator()[pri:0, instance:nuixc.testSuite.AdditionTests@3f67593e]" started-at="2024-03-25T01:47:42Z" name="testLatestOperator" finished-at="2024-03-25T01:47:44Z" duration-ms="1412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLatestOperator -->
+        <test-method is-config="true" signature="close()[pri:0, instance:nuixc.testSuite.AdditionTests@3f67593e]" started-at="2024-03-25T01:47:44Z" name="close" finished-at="2024-03-25T01:47:44Z" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- nuixc.testSuite.AdditionTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
