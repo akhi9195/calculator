@@ -50,7 +50,7 @@ public class CalculatorPage {
 
 	private String getURL() {
 		try {
-				prop = Commons.readPropertiesFile(System.getProperty("user.home")+"\\eclipse-workspace\\nuixc\\src\\test\\resources\\testData_stage.properties");
+				prop = Commons.readPropertiesFile(System.getProperty("user.home")+"\\eclipse-workspace\\nuixc\\src\\test\\resources\\testData_prod.properties");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

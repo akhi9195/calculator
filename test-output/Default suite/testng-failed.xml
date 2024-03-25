@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="nuixc.testSuite.CombinationTests">
+      <class name="nuixc.testSuite.AdditionTests">
         <methods>
           <include name="setup"/>
           <include name="close"/>
-          <include name="testWithDecimalNumbers"/>
+          <include name="test9digitNumbers"/>
         </methods>
-      </class> <!-- nuixc.testSuite.CombinationTests -->
+      </class> <!-- nuixc.testSuite.AdditionTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

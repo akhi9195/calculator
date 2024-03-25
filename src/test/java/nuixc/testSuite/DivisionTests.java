@@ -11,7 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import nuixc.CalculatorPage;
+import nuixc.pageObjects.CalculatorPage;
 import nuixc.util.Commons;
 
 public class DivisionTests extends BaseTest{
