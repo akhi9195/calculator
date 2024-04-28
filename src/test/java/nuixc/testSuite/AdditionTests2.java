@@ -16,10 +16,11 @@ import nuixc.util.Commons;
 
 public class AdditionTests2 extends BaseTest{
 	
-	
 	@Test
 	public void testTwoNumbers() {
 		
+		CalculatorPage calculator = new CalculatorPage(driver);
+		calculator.open();
 		calculator.getNumbersPanel().clickNumber(7);
 		calculator.getOperations().clickAddition();
 		calculator.getNumbersPanel().clickNumber(7);
@@ -34,8 +35,8 @@ public class AdditionTests2 extends BaseTest{
 	@Test
 	public void testMultipleNumbers() {
 		
-		
-		
+		CalculatorPage calculator = new CalculatorPage(driver);
+		calculator.open();
 		for(int i=0;i<10;++i) {
 			calculator.getNumbersPanel().clickNumber(i);
 			calculator.getOperations().clickAddition();
@@ -49,44 +50,25 @@ public class AdditionTests2 extends BaseTest{
 		Assertions.assertThat(actualResult).as("Expected and Actual results doesn't matched.").isEqualTo(exepctedResult);	
 	}
 	
-	
 	@Test
-	public void testLatestOperator() {
+	public void test9digitNumbers() {
 		
+		CalculatorPage calculator = new CalculatorPage(driver);
+		calculator.open();
 		
-		
-		calculator.getNumbersPanel().clickNumber(7);
-		calculator.getOperations().clickMultiply();
-		calculator.getOperations().clickSubtraction();
+		for(int j=0;j<10;++j) {
+			for(int i=0;i<10;++i) {
+				calculator.getNumbersPanel().clickNumber(i);			
+			}
 		calculator.getOperations().clickAddition();
-		calculator.getNumbersPanel().clickNumber(7);
+		}
+			
 		calculator.getOperations().clickEquals();
-		
-		int exepctedResult = 14;
-		int actualResult = Integer.parseInt(calculator.getDisplay().getDisplayText());
+		double exepctedResult = 1.23456789e+9;
+		double actualResult = Double.parseDouble(calculator.getDisplay().getDisplayText());
 		
 		Assertions.assertThat(actualResult).as("Expected and Actual results doesn't matched.").isEqualTo(exepctedResult);	
 	}
 	
-	@Test ////made it wrong intentionally.
-	public void testClear() {
-
-
-
-		calculator.getNumbersPanel().clickNumber(1);
-		calculator.getOperations().clickAddition();
-		calculator.getOperations().clickClear();
-		
-		for(int i=2;i<10;++i) {
-			calculator.getNumbersPanel().clickNumber(i);
-			calculator.getOperations().clickAddition();
-		}
 	
-		calculator.getOperations().clickEquals();
-		
-		int exepctedResult = 440;//made it wrong intentionally.
-		int actualResult = Integer.parseInt(calculator.getDisplay().getDisplayText());
-		
-		Assertions.assertThat(actualResult).as("Expected and Actual results doesn't matched.").isEqualTo(exepctedResult);		
-	}
 }
